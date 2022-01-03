@@ -1,0 +1,506 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Core · Minifiedarc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="controllers.html" />
+    
+    
+    <link rel="prev" href="assets.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="struct.html">
+            
+                <a href="struct.html">
+            
+                    
+                    Estrutura
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="files.html">
+            
+                <a href="files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="assets.html">
+            
+                <a href="assets.html">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="core.html">
+            
+                <a href="core.html">
+            
+                    
+                    Core
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="controllers.html">
+            
+                <a href="controllers.html">
+            
+                    
+                    Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="models.html">
+            
+                <a href="models.html">
+            
+                    
+                    Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docs.html">
+            
+                <a href="docs.html">
+            
+                    
+                    Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="vendor.html">
+            
+                <a href="vendor.html">
+            
+                    
+                    Vendor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="uploads.html">
+            
+                <a href="uploads.html">
+            
+                    
+                    Uploads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Core</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="core">Core</h2>
+<p style="text-align: justify;">
+Esse diret&#xF3;rio cont&#xE9;m todos os arquivos que comp&#xF5;em o n&#xFA;cleo da aplica&#xE7;&#xE3;o, assim os arquivo presentes nesta pasta s&#xF3; devem ser alterados caso o desenvolvedor tenha um conhecimento maior sobre o comportamento da aplica&#xE7;&#xE3;o para que altera&#xE7;&#xF5;es n&#xE3;o calculadas possam impactar a aplica&#xE7;&#xE3;o em diferentes pontos.
+</p>
+
+<h3 id="infophp">info.php</h3>
+<p style="text-align: justify;">
+Esse arquivo &#xE9; o mais simples e sua fun&#xE7;&#xE3;o no projeto &#xE9; fornecer informa&#xE7;&#xF5;es a respeito do ambiente php onde a aplica&#xE7;&#xE3;o esta sendo executada. Muito &#xFA;til para verificar as extens&#xF5;es habilitadas assim como tamb&#xE9;m as configura&#xE7;&#xF5;es dispon&#xED;veis no ambiente.
+</p>
+
+<h3 id="environmentphp">environment.php</h3>
+<p style="text-align: justify;">
+Esse arquivo cont&#xE9;m defini&#xE7;&#xF5;es a respeito de qual ambiente a aplica&#xE7;&#xE3;o esta sendo executada (desenvolvimento &quot;DSV&quot; ou produ&#xE7;&#xE3;o &quot;PRD&quot;), utilizando a vari&#xE1;vel <code class="markdown">$envDb</code>. Nesse arquivo a defini&#xE7;&#xE3;o de qual banco de dados est&#xE1; conectado a aplica&#xE7;&#xE3;o (desenvolvimento &quot;DSV&quot; ou produ&#xE7;&#xE3;o &quot;PRD&quot;) &#xE9; feito pela variavel <code class="markdown">$envDb</code>, desta forma &#xE9; poss&#xED;vel alternar entre bancos de dados diferentes.
+</p>
+
+<h3 id="configphp">config.php</h3>
+<p style="text-align: justify;">
+Esse arquivo cont&#xE9;m as defini&#xE7;&#xF5;es dos bancos de dados utilizados pela aplica&#xE7;&#xE3;o. Nesse arquivo o desenvolvedor poder&#xE1; informar os dados de conex&#xE3;o do banco de desenvolvimento como tamb&#xE9;m as informa&#xE7;&#xF5;es de conex&#xE3;o para o banco de produ&#xE7;&#xE3;o. 
+</p>
+
+<pre><code>$config[&quot;dbname&quot;] = &quot;NOME_DO_BANCO&quot;;
+$config[&quot;dbhost&quot;] = &quot;HOST_DO_BANCO&quot;;
+$config[&quot;dbuser&quot;] = &quot;USER_PARA_CONEXAO&quot;;
+$config[&quot;dbpass&quot;] = &quot;SENHA_PARA_CONEXAO&quot;;
+$config[&quot;dbport&quot;] = &quot;PORTA_UTILIZADA&quot;;
+</code></pre><h3 id="sessionphp">session.php</h3>
+<p style="text-align: justify;">
+Esse arquivo cont&#xE9;m toda a l&#xF3;gica sobre a defini&#xE7;&#xE3;o de sess&#xE3;o da aplica&#xE7;&#xE3;o, todas as controllers que necessitarem que autentica&#xE7;&#xE3;o precisaram extender esta class. As fun&#xE7;&#xF5;es relacionadas ao controller de sess&#xE3;o est&#xE3;o implementadas nesse arquivo, portanto controllers que necessitarem de autentica&#xE7;&#xE3;o extendendo <b>session</b> automaticamente estar&#xE1; implementando essas fun&#xE7;&#xF5;es e as aplicando.
+</p>
+
+<p style="text-align: justify;">
+Uma classe que extender a class (session) presente no arquivo session.php estar&#xE1; herdando alguns metodos bastante utilizados pelo fluxo desenhado para esse projeto. Alguns desses m&#xE9;todos s&#xE3;o :
+</p>
+
+<pre><code>void loadView($view [, $data = array()]);
+Carrega uma view localizada na pasta views da estrutura do projeto.
+
+json returnJson($data [, $code = false [, $message = false]]);
+Retorna um json padronizado com um tratamento espec&#xED;fico para quest&#xF5;es 
+particulares que possam aparecer.
+
+void redirectRoute($route);
+Redireciona o usu&#xE1;rio para a rota desejada.
+
+string returnVersion();
+Retorna um string descrevendo a vers&#xE3;o atual do sistema
+</code></pre><h3 id="controllerphp">controller.php</h3>
+<p style="text-align: justify;">
+Esse arquivo &#xE9; destinado a implementar fun&#xE7;&#xF5;es globais que s&#xE3;o usadas por class que extendam a class controller presente neste arquivo. Esse arquivo n&#xE3;o implementa quest&#xF5;es de sess&#xE3;o portanto essa class &#xE9; utilizada em paginas p&#xFA;blicas. Devido a finalizada similares &#xE9; interessante que os m&#xE9;todos existentes em <b>controller.php</b> tamb&#xE9;m existam em <b>session.php</b> ficando disponiveis em controllers p&#xFA;blicas como tamb&#xE9;m &quot;privadas&quot;.
+</p>
+
+<p style="text-align: justify;">
+Uma classe que extender a class (controller) presente no arquivo controller.php estar&#xE1; herdando alguns metodos bastante utilizados pelo fluxo desenhado para esse projeto. Alguns desses m&#xE9;todos s&#xE3;o :
+</p>
+
+<pre><code>void loadHeader();
+Carrega o menu configurado pelas informa&#xE7;&#xF5;es presentes no banco de 
+dados e alter&#xE1;veis pela &#xE1;rea administrativa.
+
+void loadView($view [, $data = array()]);
+Carrega uma view localizada na pasta views da estrutura do projeto.
+
+json returnJson($data [, $code = false [, $message = false]]);
+Retorna um json padronizado com um tratamento espec&#xED;fico para quest&#xF5;es 
+particulares que possam aparecer.
+
+void redirectRoute($route);
+Redireciona o usu&#xE1;rio para a rota desejada.
+
+string returnVersion();
+Retorna um string descrevendo a vers&#xE3;o atual do sistema
+</code></pre><h3 id="modelphp">model.php</h3>
+<p style="text-align: justify;">
+Esse arquivo cont&#xE9;m a class model que &#xE9; extendida por todas a models da estrutura presentes no diret&#xF3;rio <b>models</b>. Sendo assim a models criadas no projeto devem extender esta class para que possam utilizar os metodos destinados a realizar a persist&#xEA;ncia com o banco de dados. Essa class cont&#xE9;m dois m&#xE9;todos que s&#xE3;o utilizados para realizar a intera&#xE7;&#xF5;es com o banco de dados.
+</p>
+
+<p style="text-align: justify;">
+Essa estrutura implementa a biblioteca PDO para realizar a integra&#xE7;&#xE3;o com o banco de dados, com o objetivo de facilitar a utiliza&#xE7;&#xE3;o do banco de dados pela aplica&#xE7;&#xE3;o, como tamb&#xE9;m ter um n&#xED;vel de abstra&#xE7;&#xE3;o maior, possibilitando trocas futuras de SGBD. Os m&#xE9;todos dispon&#xED;veis nesta class e que estaram dispon&#xED;ves para class que a extenderem s&#xE3;o :
+</p>
+
+<pre><code>void conectar($config);
+Esse m&#xE9;todo &#xE9; executado pelo pr&#xF3;prio construtor da class model e sua fazer 
+a conex&#xE3;o com o banco de dados.
+
+array executar($sql [, $params = array()]);
+Esse m&#xE9;todo &#xE9; o metodo utilizado para executar scripts sql no banco de 
+dados, retorna false em caso de falha.
+</code></pre><h3 id="corephp">core.php</h3>
+<p style="text-align: justify;">
+Esse arquivo &#xE9; o principal arquivo da estrutura, ele &#xE9; o respons&#xE1;vel por realizar o controle das rotas do sistema, realiando a leitura da url e realizando a chamada da controller correta juntamente com o m&#xE9;todo desejado. Nesse arquivo temos a class core e o m&#xE9;todo run que realiza todo o trabalho.
+</p>
+
+<p style="text-align: justify;">
+Para entendermos como o metodo `run` trabalha vamos entender como caracteriza-se uma rota. Basicamente podemos determinar uma rota por tr&#xEA;s partes.
+</p>
+
+<pre><code>[&#xB9; /controler [&#xB2; /metodo [&#xB3; /parametro1 [ /parametro2 [/...] ] ] ] ]
+
+Parte 1: Determinar o nome da controller a ser requisitada, chamando 
+apenas a controller o metodo padr&#xE3;o executado ser&#xE1; o m&#xE9;todo &quot;index&quot;. 
+Lembrando que ao realizar a chamada da rota o nome da contrller
+especificado dever ser tudo antes de Controller.php.
+
+Example: pageController.php &gt;&gt; /page
+
+Parte 2: &#xC9; a respons&#xE1;vel por determinar qual m&#xE9;todo da controller deve ser executado. 
+Portanto deve determinar primeiro a controller antes de especificar o m&#xE9;todo.
+
+Example: Chamando o m&#xE9;todo &quot;make&quot; da controller &quot;pageController.php&quot; &gt;&gt; /page/make
+
+Parte 3: Ap&#xF3;s determinar o m&#xE9;todo da controller a ser chamado, &#xE9; poss&#xED;vel passar 
+valores para esse m&#xE9;todo utilizando as partes seguintes. Assim iniciando da terceira 
+para da url considerando a separa&#xE7;&#xE3;o por / esses valores s&#xE3;o convertidos em argumentos 
+que s&#xE3;o recebidos pelo m&#xE9;todo chamado. 
+
+Example: /page/make/a/b
+
+class pageController extends controller {
+
+    public function metodo($parametro1, $parametro2){
+
+        //Resultar&#xE1; em um &quot;a&quot; na tela
+        echo($parametro1);
+
+    }
+
+}
+</code></pre><p style="text-align: justify;">
+Com isso podemos entender como a aplica&#xE7;&#xE3;o trabalho com o mvc e aplicar os conceitos envolvidos.
+</p>
+
+<h3 id="nota-">Nota !</h3>
+<blockquote>
+<p style="text-align: justify;">Por favor mant&#xE9;nha os arquivos sempre atualizados com a vers&#xE3;o do sistema. Sempre documente os objetos criados e caso ocorra altera&#xE7;&#xE3;o especifique a nova fun&#xE7;&#xE3;o do elemento criado. Os arquivos contidos nesse diret&#xF3;rio devem ser uma c&#xF3;pia fiel dos arquivos sendo utilizados pela aplica&#xE7;&#xE3;o, com o objetivo de facilitar o entendimento de novos desenvolvedores da situa&#xE7;&#xE3;o atual do projeto.</p></blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="assets.html" class="navigation navigation-prev " aria-label="Previous page: Assets">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="controllers.html" class="navigation navigation-next " aria-label="Next page: Controller">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Core","level":"1.2.3","depth":2,"next":{"title":"Controller","level":"1.2.4","depth":2,"path":"markdown/controllers.md","ref":"markdown/controllers.md","articles":[]},"previous":{"title":"Assets","level":"1.2.2","depth":2,"path":"markdown/assets.md","ref":"markdown/assets.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","margin.left":56,"headerTemplate":null,"margin.bottom":56,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Ubuntu","margin.top":56,"footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false,"margin.right":56},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Minifiedarc","links":{"about":null,"issues":null,"contribute":null,"sharing":{"google":null,"facebook":null,"twitter":null}},"gitbook":"*","description":"Documentação da Arquitetura"},"file":{"path":"markdown/core.md","mtime":"2018-02-27T23:14:28.843Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-28T23:44:56.018Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

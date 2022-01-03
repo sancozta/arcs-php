@@ -1,0 +1,31 @@
+{# TEMPLATE #}
+{% extends "ttemplate.twig" %}
+
+{# TITLE #}
+{% block title %}Started{% endblock %}
+
+{# STYLE #}
+{% block styles %}{% endblock %}
+
+{# CONTENTS #}
+{% block contents %}
+
+<div class="box-flex">
+    <div>
+
+        {% if ENV is not null %}
+            ENV: {{ ENV }}<br>
+            ROTA: <a href="{{ ROTA }}">Enviar Menssagem!</a>
+        {% endif %}
+
+        {{ MSG }}
+
+        <br>BEM VINDO AO PHPARC !
+
+    </div>
+</div>
+
+{% endblock %}
+
+{# SCRIPTS #}
+{% block scripts %}{% endblock %}

@@ -1,0 +1,57 @@
+{# TEMPLATE #}
+{% extends "ttemplate.twig" %}
+
+{# TITLE #}
+{% block title %}Login Page Google{% endblock %}
+
+{# STYLE #}
+{% block styles %}{% endblock %}
+
+{# CONTENTS #}
+{% block contents %}
+
+<div>Page Login Google</div>
+
+{% endblock %}
+
+{# SCRIPTS #}
+{% block scripts %}
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script>
+	function onSignIn(googleUser) {
+
+		var profile = googleUser.getBasicProfile();
+
+		console.log("ID: " + profile.getId()); // DO NOT SEND TO YOUR BACKEND! USE AN ID TOKEN INSTEAD.
+		console.log("Name: " + profile.getName());
+		console.log("Image URL: " + profile.getImageUrl());
+		console.log("Email: " + profile.getEmail()); // THIS IS NULL IF THE 'EMAIL' SCOPE IS NOT PRESENT.
+
+		$.ajax({
+			type: "POST",
+			url: "/signin/loginGoogle",
+			data: {
+				"id": profile.getId(),
+				"name": profile.getName(),
+				"mail": profile.getEmail(),
+				"photo": profile.getImageUrl()
+			},
+			dataType: "json",
+			success: function (callback) {
+				if (callback.response == "sucess") {
+					location.reload();
+				} else {
+					location.reload();
+				}
+			},
+			error: function (XMLHttpRequest, textStatus, errorThrown) {
+				alert("Erro, Desculpe!");
+			}
+		});
+
+	}
+</script>
+
+{% endblock %}

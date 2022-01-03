@@ -1,0 +1,44 @@
+{# TEMPLATE #}
+{% extends "ttemplate.twig" %}
+
+{# TITLE #}
+{% block title %}Logout Page Google{% endblock %}
+
+{# STYLE #}
+{% block styles %}{% endblock %}
+
+{# CONTENTS #}
+{% block contents %}
+
+<div>Page Logout Google</div>
+
+{% endblock %}
+
+{# SCRIPTS #}
+{% block scripts %}
+
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+<script>
+	function signOut() {
+
+		var auth2 = gapi.auth2.getAuthInstance();
+
+		auth2.signOut().then(function () {
+			console.log("User signed out.");
+			document.location = "/page/logout";
+		}).catch(function () {
+			document.location = "/page/logout";
+		});
+
+	}
+
+	function onLoad() {
+		gapi.load("auth2", function () {
+			gapi.auth2.init();
+		});
+	}
+
+</script>
+
+{% endblock %}
